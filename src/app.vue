@@ -7,10 +7,6 @@
         <!-- 底层基础div -->
         <div class="base">{{ item }}<div class="base-b">{{ timeArrayT[index] }}</div>
         </div>
-        <!-- 翻页动画div -->
-        <div :class="['face',{ anime: isAnimate[index] }]"
-             @animationend="onAnimateEnd(index)">{{ timeArrayT[index] }}</div>
-        <div :class="['back',{ anime: isAnimate[index] }]">{{ item }}</div>
       </div>
       <!-- 文字 -->
       <div class="time-unit"
